@@ -19,7 +19,6 @@ const HeaderView = styled.View`
   align-items: center;
   padding-left: 15;
   padding-right: 15;
-  margin-bottom: 50;
 `;
 
 const TextHeader = styled.Text`
@@ -41,7 +40,10 @@ export default class Header extends React.Component {
     render() {
         return (
             <HeaderView>
-                <Octicons color={'white'} size={22} name="three-bars" />
+                <ShopView>
+                  <Octicons color={'white'} size={22} style={{paddingRight: 10}} name="three-bars" />
+                  <FontAwesome color={'white'} size={22} name="search" />
+                </ShopView>
                 <TextHeader onPress={() => Linking.openURL('https://www.bobbibrowncosmetics.com/')}>BOBBI BROWN</TextHeader>
                 <ShopView>
                     <MaterialIcons color={'white'} size={22} style={{paddingRight: 10}} name="location-on" />

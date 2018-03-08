@@ -2,9 +2,6 @@ import React from 'react';
 import { View, Text, Image, ScrollView, Dimensions } from 'react-native';
 import styled from 'styled-components/native';
 
-const CarouselView = styled.View`
-    margin-bottom: 50;
-`;
 
 const width = Dimensions.get('window').width;
 const height = Dimensions.get('window').height / 3;
@@ -12,7 +9,7 @@ const height = Dimensions.get('window').height / 3;
 export default class Carousel extends React.Component {
     render(){
         return (
-            <CarouselView>
+            <View>
                 <ScrollView 
                     horizontal={true}
                     showsHorizontalScrollIndicator={false}
@@ -22,7 +19,7 @@ export default class Carousel extends React.Component {
                     <Image source={{uri: 'https://www.cesarsway.com/sites/newcesarsway/files/styles/large_article_preview/public/Common-dog-behaviors-explained.jpg?itok=FSzwbBoi'}} style={{height, width}} />
                     <Image source={{uri: 'http://cdn3-www.dogtime.com/assets/uploads/2011/01/file_23262_entlebucher-mountain-dog-300x189.jpg'}} style={{height, width}} />         
                 </ScrollView>
-            </CarouselView>
+            </View>
         );
     }
 }
