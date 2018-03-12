@@ -56,7 +56,7 @@ export const RootStack = TabNavigator({
 },
 {
     tabBarPosition: 'bottom',
-    initialRouteName: 'Second',
+    initialRouteName: 'Third',
     swipeEnabled: false,
     tabBarOptions: {
         activeTintColor: 'tomato',

@@ -9,6 +9,7 @@ import Capri from './Capri';
 import Comfortable from './Comfortable';
 import Bestsellers from './Bestsellers';
 import Button from './Button';
+import Square from './Square';
 
 const ViewFlex = styled.View`
   display: flex;
@@ -36,6 +37,7 @@ const SecondScreen = () => {
         <Comfortable />
         <LinkImage image={images.forth}/>
         <Bestsellers />
+        <Square />
     </ScrollView>
   );
 }
